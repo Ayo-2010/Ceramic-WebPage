@@ -1,0 +1,58 @@
+body{
+        background-color: #6b7280;
+}
+.contact-main{
+    height: 45%;
+    /* Darken the background image slightly with a translucent gradient overlay */
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(./images/other_header.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-size: cover;
+    /* Fallback background color for older browsers */
+    background-color: rgba(0,0,0,0.35);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Safari (WebKit) support */
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+    /* Standard property for other browsers */
+    backdrop-filter: blur(6px) saturate(120%);
+}
+.contact-main h1{
+    font-size: 80px;
+        line-height: 96px;
+        text-align: center;
+        font-family:  Sans-serif 700 normal;
+}
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+
+/* Tablet and small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .contact-main {
+        height: auto;
+        padding: 35px 20px;
+    }
+
+    .contact-main h1 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .contact-main {
+        height: auto;
+        padding: 25px 12px;
+    }
+
+    .contact-main h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+

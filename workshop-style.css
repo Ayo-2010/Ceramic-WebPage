@@ -1,0 +1,247 @@
+body{
+        background-color: #bababa;
+}
+.workshop-main{
+        height: 250px;
+    /* transform: translate3d(0px, -12.48px, 0px); */
+
+    /* Darken the background image slightly with a translucent gradient overlay */
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(./images/Workshop_header_blog_A.webp);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    background-size: cover;
+    /* Fallback background color for older browsers */
+    background-color: rgba(0,0,0,0.35);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Safari (WebKit) support */
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+    /* Standard property for other browsers */
+    backdrop-filter: blur(6px) saturate(120%);
+}
+.workshop-main h1{
+    font-size: 80px;
+        line-height: 96px;
+        text-align: center;
+        font-family:  Sans-serif 700 normal;
+}
+.W-main-3 {
+    display: flex;
+    flex-direction: row;
+    font-family: "Kumbh Sans 400 normal";
+    background-color: white;
+    margin: 50px 150px 100px 150px;
+    width: 1200px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.W-main-3 .left {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.W-main-3 .right-2 {
+    width: 50%;
+    float: right;
+    overflow: hidden;
+}
+
+.W-main-3 img {
+    /* height: 100%;
+    width: 100%; */
+    object-fit: cover;
+    width: 600px;
+    height: 600px;
+    /* transform: translate(-0px,-300px); */
+}
+
+.W-main-3 .right {
+    width: 50%;
+    padding: 90px 100px 0 50px;
+    opacity: 0.8;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+.W-main-3 .left-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 80px 0 100px;
+    opacity: 0.8;
+    float: left;
+    overflow: hidden;
+}
+.W-main-3 .left-3 {
+    width: 50%;
+    padding: 100px 80px 0 50px;
+    opacity: 0.8;
+    float: left;
+    overflow: hidden;
+}
+
+.W-main-3 .right h2 {
+    font-size: 40px;
+    line-height: 70px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 16px;
+    align-items: center;
+    overflow: hidden;
+
+}
+.flex button{
+    background-color: rgb(157, 17, 45);
+    border-radius: 0;
+    width: 60%;
+}
+.spa{
+    color: rgb(158, 30, 56);
+    text-align: center;
+    /* font-family: "Sans-Sans 400 normal"; */
+    font-weight: normal;    
+    width: 40%;
+    padding:20px 20px 20px 20px;
+    font-size: 17px;
+    line-height: 27px;
+
+    border-bottom: 1px crimson solid;
+
+}
+.spa:hover{
+    opacity: 0.8;
+}
+
+.W-main-3 .right p {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.W-main-3 .left-2 h2 {
+    font-size: 40px;
+    line-height: 70px;
+}
+
+.W-main-3 .left-2 p {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+
+/* Tablet and small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .workshop-main {
+        height: auto;
+        padding: 35px 20px;
+    }
+
+    .workshop-main h1 {
+        font-size: 44px;
+        line-height: 52px;
+    }
+
+    .W-main-3 {
+        flex-direction: column;
+        margin: 25px 15px;
+        width: auto;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .W-main-3 .left,
+    .W-main-3 .left-2,
+    .W-main-3 .left-3,
+    .W-main-3 .right,
+    .W-main-3 .right-2 {
+        width: 100%;
+        float: none;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .W-main-3 img {
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        object-fit: cover;
+    }
+
+    .W-main-3 .right h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .W-main-3 .right p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+/* Mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .workshop-main {
+        height: auto;
+        padding: 25px 12px;
+    }
+
+    .workshop-main h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .W-main-3 {
+        flex-direction: column;
+        margin: 15px 8px;
+        width: auto;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .W-main-3 .left,
+    .W-main-3 .left-2,
+    .W-main-3 .left-3,
+    .W-main-3 .right,
+    .W-main-3 .right-2 {
+        width: 100%;
+        float: none;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .W-main-3 img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        object-fit: cover;
+    }
+
+    .W-main-3 .right h2 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .W-main-3 .right p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 12px;
+    }
+}
+
