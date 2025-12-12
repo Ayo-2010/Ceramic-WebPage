@@ -2,11 +2,11 @@ body{
         background-color: #6b7280;
 }
 .contact-main{
-    height: 45%;
+    min-height: 220px;
+    padding: 48px 0;
     /* Darken the background image slightly with a translucent gradient overlay */
     background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(./images/other_header.webp);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position-y: bottom;
     background-size: cover;
     /* Fallback background color for older browsers */
@@ -22,11 +22,70 @@ body{
     backdrop-filter: blur(6px) saturate(120%);
 }
 .contact-main h1{
-    font-size: 80px;
-        line-height: 96px;
-        text-align: center;
-        font-family:  Sans-serif 700 normal;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    font-family:  Sans-serif 700 normal;
 }
+
+/* Contact page layout */
+.contact-section{
+    padding: 32px 48px;
+}
+.contact-container{
+    display: flex;
+    gap: 20px;
+    align-items: stretch; /* ensure equal height columns */
+    justify-content: space-between;
+}
+.contact-left{
+    flex: 0 0 62%;
+}
+.contact-right{
+    flex: 0 0 34%;
+}
+
+.contact-card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* Make cards fill column height so left and right match */
+.contact-left .contact-card,
+.contact-right .contact-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label{ display:block; margin-bottom:8px; font-weight:600; }
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea, .contact-form select{
+    width:100%; padding:12px 14px; border:1px solid #e5e7eb; border-radius:6px; margin-bottom:16px; font-size:15px;
+}
+.contact-form textarea{ min-height:140px; resize:vertical; }
+.contact-form{ display:flex; flex-direction:column; flex:1; }
+.contact-form .form-row{ display:flex; gap:16px; }
+.contact-form .form-row .col{ flex:1 }
+.contact-form .submit-row{ display:flex; align-items:center; gap:16px; margin-top:16px }
+.contact-form .submit-row{ margin-top: auto; }
+.button.primary{ background:#a54c5e; color:#fff; border:none; padding:12px 22px; border-radius:6px; cursor:pointer }
+.button.primary:hover{ opacity:0.95 }
+
+.contact-info p{ margin:6px 0; color:#374151 }
+.hours-list{ list-style:none; padding-left:0; margin:8px 0 0 0 }
+.hours-list li{ margin:6px 0; color:#374151 }
+.map-placeholder{ width:100%; height:160px; background:#f3f4f6; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#9ca3af }
+.map-placeholder iframe{ height:100%; border-radius:6px }
+
+/* Responsive tweaks */
+@media (max-width: 992px){
+    .contact-section{ padding:24px 24px }
+    .contact-container{ flex-direction:column }
+    .contact-left, .contact-right{ flex: 1 1 100% }
+}
+
 
 /* ========== MOBILE RESPONSIVENESS ========== */
 

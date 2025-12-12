@@ -4,105 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog — Ceramic studio</title>
+    <meta name="description" content="Articles and updates about ceramic techniques, products and workshops from Ceramic studio.">
+    <link rel="canonical" href="http://example.com/blog.html">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Blog","name":"Ceramic studio Blog","url":"http://example.com/blog.html","publisher":{"@type":"Organization","name":"Ceramic studio","logo":{"@type":"ImageObject","url":"http://example.com/images/favicon.svg"}}}
+    </script>
     <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="blog-style.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/brands.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
-    <header id="nav">
-        <div class="left-nav">
-            <a href="./index.html"><img src="./images/logo.webp" alt=""></a>
-        </div>
-        <div class="right-nav">
-            <a href="./shop.html">SHOP</a>
-            <a href="./workshop.html">WORKSHOP</a>
-            <a href="./blog.html" class="active">BLOG</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="#"><i class="fa fa-cart-shopping ff"></i></a>
-        </div>
-    </header>
+    <div data-include="includes/header.html"></div>
+
     <div class="blog-main">
         <h1>Blog</h1>
     </div>
+
     <div class="section blog-section">
         <div class="left-blog">
-            <div class="sec">
+            <a class="sec" href="./posts/post1.html">
                 <div class="left">
-                    <img src="./images/Workshop_header_blog_A.webp" alt="">
+                    <img src="./images/Workshop_header_blog_A.webp" alt="What affects the quality of ceramic products?">
                 </div>
                 <div class="right">
                     <h3>What affects the quality of ceramic products?</h3>
                     <span class="date">17 August 2022</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum nisi nec massa rhoncus
-                        venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        curae; Phasellus suscipit...</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum nisi nec massa rhoncus venenatis... <strong>Read more</strong></p>
                     <p class="blogComment">Musa</p>
                 </div>
-            </div>
-            <div class="sec">
+            </a>
+
+            <a class="sec" href="./posts/post2.html">
                 <div class="left">
-                    <img src="./images/Workshop_header_blog_A.webp" alt="">
+                    <img src="./images/Workshop_header_blog_A.webp" alt="Ceramic glazing basics">
                 </div>
                 <div class="right">
-                    <h3>What affects the quality of ceramic products?</h3>
-                    <span class="date">17 August 2022</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum nisi nec massa rhoncus
-                        venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        curae; Phasellus suscipit...</p>
-                    <p class="blogComment">Musa</p>
+                    <h3>Ceramic glazing basics</h3>
+                    <span class="date">05 May 2023</span>
+                    <p>Glazing is a crucial step for both aesthetics and durability. Here are the fundamentals you need to know... <strong>Read more</strong></p>
+                    <p class="blogComment">Abdul</p>
                 </div>
-            </div>
-            <div class="sec">
+            </a>
+
+            <a class="sec" href="./posts/post1.html">
                 <div class="left">
-                    <img src="./images/Workshop_header_blog_A.webp" alt="">
+                    <img src="./images/Workshop_header_blog_A.webp" alt="Workshops and learning opportunities">
                 </div>
                 <div class="right">
-                    <h3>What affects the quality of ceramic products?</h3>
-                    <span class="date">17 August 2022</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum nisi nec massa rhoncus
-                        venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                        curae; Phasellus suscipit...</p>
+                    <h3>Workshops and learning opportunities</h3>
+                    <span class="date">12 January 2024</span>
+                    <p>Join our hands-on workshops to learn wheel-throwing and hand-building techniques. Book your spot now... <strong>Read more</strong></p>
                     <p class="blogComment">Musa</p>
                 </div>
-            </div>
+            </a>
         </div>
-        <div class="right-blog">
-            
-        </div>
+
+        <aside class="right-blog">
+            <div class="sidebar">
+                <h4>Recent posts</h4>
+                <ul>
+                    <li><a href="./posts/post1.html">What affects the quality of ceramic products?</a></li>
+                    <li><a href="./posts/post2.html">Ceramic glazing basics</a></li>
+                    <li><a href="./posts/post1.html">Workshops and learning opportunities</a></li>
+                </ul>
+            </div>
+        </aside>
     </div>
 
 
+    <div data-include="includes/footer.html"></div>
 
-    <div class="footer">
-        <div class="sub-foot">
-            <p>02-233 Warszawa</p>
-            <p>Al. Jerozolimskie 12</p>
-        </div>
-        <div class="sub-foot">
-            <a href="#">email@contact.com</a>
-            <a href="#">07045033528</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Store Regulations</a>
-            <a href="#">Privacy policy</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Delivery</a>
-            <a href="#">Returns & Exchanges</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-x-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-
-    </div>
-    <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="year"></span> Abdullah Abdulwahab — <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
-        </div>
+    <script src="./js/include.js"></script>
+    <script>
+        // insert current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
+</html>

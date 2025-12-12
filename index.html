@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ceramic studio</title>
+    <meta name="description" content="Handmade ceramics — shop, workshops and blog.">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/favicon.svg">
+    <meta property="og:title" content="Ceramic studio">
+    <meta property="og:description" content="Handmade ceramics — shop, workshops and blog.">
+    <meta property="og:image" content="./images/og-image.svg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="http://example.com/">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"Ceramic studio","url":"http://example.com/","logo":"http://example.com/images/favicon.svg","sameAs":["https://www.facebook.com/","https://twitter.com/","https://www.instagram.com/"]}
+    </script>
     <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/brands.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <header id="nav">
-        <div class="left-nav">
-            <img src="./images/logo.webp" alt="">
-        </div>
-        <div class="right-nav">
-            <a href="./shop.html">SHOP</a>
-            <a href="./workshop.html">WORKSHOP</a>
-            <a href="./blog.html">BLOG</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="#"><i class="fa fa-cart-shopping ff"></i></a>
-        </div>
-    </header>
+    <div data-include="includes/header.html"></div>
     <div class="section main">
             <h1>Ceramic studio</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci massa, dapibus quis molestie sit amet, pharetra vitae dolor. Praesent auctor, dui id maximus sagittis, lectus enim pharetra quam, ut laoreet tortor metus ut ipsum.</p>
@@ -131,36 +131,8 @@
         </div>
     </div>
     </div>
-    <div class="footer">
-        <div class="sub-foot">
-            <p>02-233 Warszawa</p>
-            <p>Al. Jerozolimskie 12</p>
-        </div>
-        <div class="sub-foot">
-            <a href="#">email@contact.com</a>
-            <a href="#">07045033528</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Store Regulations</a>
-            <a href="#">Privacy policy</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Delivery</a>
-            <a href="#">Returns & Exchanges</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-x-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-
-    </div>
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Abdullah Abdulwahab — <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
-      </div>
-    </footer>
+    <div data-include="includes/footer.html"></div>
+    <script src="./js/include.js"></script>
     <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
-    <script src="./fontawesome-free-6.6.0-web/js/all.js"></script>
 </body>
 </html>

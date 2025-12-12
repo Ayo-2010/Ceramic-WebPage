@@ -1,59 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact — Ceramic studio</title>
+    <meta name="description" content="Get in touch with Ceramic studio — contact form, opening hours and location.">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Contact — Ceramic studio">
+    <meta property="og:description" content="Get in touch with Ceramic studio — contact form, opening hours and location.">
+    <meta property="og:image" content="./images/og-image.svg">
     <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="contact-style.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/brands.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
 </head>
+
 <body>
-    <header id="nav">
-        <div class="left-nav">
-            <a href="./index.html"><img src="./images/logo.webp" alt=""></a>
-        </div>
-        <div class="right-nav">
-            <a href="./shop.html">SHOP</a>
-            <a href="./workshop.html">WORKSHOP</a>
-            <a href="./blog.html">BLOG</a>
-            <a href="./contact.html" class="active">CONTACT</a>
-            <a href="#"><i class="fa fa-cart-shopping ff"></i></a>
-        </div>
-    </header>
+    <div data-include="includes/header.html"></div>
+
     <div class="contact-main">
         <h1>Contact</h1>
     </div>
 
+    <section class="section contact-section">
+        <div class="contact-container">
+            <div class="contact-left">
+                <div class="contact-card">
+                    <h2>Send us a message</h2>
+                    <p>If you have questions about products, workshops, or orders, send us a message and we'll respond within 2 business days.</p>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="name">Full name *</label>
+                                <input id="name" name="name" type="text" required placeholder="Your name">
+                            </div>
+                            <div class="col">
+                                <label for="email">Email *</label>
+                                <input id="email" name="email" type="email" required placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" placeholder="Short subject">
 
-    <div class="footer">
-        <div class="sub-foot">
-            <p>02-233 Warszawa</p>
-            <p>Al. Jerozolimskie 12</p>
-        </div>
-        <div class="sub-foot">
-            <a href="#">email@contact.com</a>
-            <a href="#">07045033528</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Store Regulations</a>
-            <a href="#">Privacy policy</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Delivery</a>
-            <a href="#">Returns & Exchanges</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-x-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
 
-    </div>
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Abdullah Abdulwahab — <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
-      </div>
+                        <div class="submit-row">
+                            <div>
+                                <input id="privacy" type="checkbox" required>
+                                <label for="privacy">I agree to the processing of my data in accordance with the <a href="#">Privacy policy</a>.</label>
+                            </div>
+                            <div>
+                                <button type="submit" class="button primary">Send message</button>
+                            </div>
+                        </div>
+                        <p id="formMessage" aria-live="polite" style="margin-top:12px"></p>
+                    </form>
+                </div>
+            </div>
+
+            <aside class="contact-right">
+                <div class="contact-card contact-info">
+                    <h3>Contact information</h3>
+                    <p><strong>Address</strong><br>Agbede, Ikorodu Lagos</p>
+                    <p><strong>Email</strong><br><a href="mailto:email@contact.com">ayoabdullah13@google.com</a></p>
+                    <p><strong>Phone</strong><br><a href="tel:+487045033528">+234 070 4503 3528</a></p>
+                    <h4 style="margin-top:14px">Opening hours</h4>
+                    <ul class="hours-list">
+                        <li>Mon — Fri: 09:00 — 18:00</li>
+                        <li>Saturday: 10:00 — 15:00</li>
+                        <li>Sunday: Closed</li>
+                        <li>.</li>
+                    </ul>
+                    <h4 style="margin-top:14px">Location</h4>
+                    <div class="map-placeholder">
+                        <iframe
+                            title="Ceramic studio location"
+                            width="100%"
+                            height="320"
+                            style="border:0;border-radius:6px"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d63408.33341043853!2d3.46046!3d6.6443338!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1765558350426!5m2!1sen!2sng">
+                        </iframe>
+                    </div>
+                    <div style="margin-top:12px">
+                        <a href="#" class="social"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#" class="social"><i class="fa fa-x-twitter"></i></a>
+                        <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <div data-include="includes/footer.html"></div>
+
+    <script src="./js/include.js"></script>
+    <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
+    <script>
+        // simple client-side form handling
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const form = e.currentTarget;
+            if (!form.reportValidity()) return;
+            document.getElementById('formMessage').textContent = 'Sending...';
+            // Simulate submit (replace with real endpoint)
+            setTimeout(() => {
+                form.reset();
+                document.getElementById('formMessage').textContent = 'Thank you — your message has been sent.';
+            }, 600);
+        });
+    </script>
 </body>
+</html>

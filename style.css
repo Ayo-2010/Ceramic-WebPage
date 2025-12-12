@@ -17,10 +17,10 @@ header#nav {
     background-color: whitesmoke;
     box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
     display: flex;
-    height: 75px;
+    height: 64px;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 200px;
+    padding: 0px 120px;
 }
 
 header#nav .left-nav {
@@ -28,14 +28,12 @@ header#nav .left-nav {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    transform: translate(50px,-20px); /* Standard syntax */
+    transform: none;
 }
 
 header#nav .left-nav a{
-    width: 80px;
-    /* top: 0; */
-    height: 80px;
-
+    width: 64px;
+    height: 64px;
 }
 
 header#nav .right-nav {
@@ -44,15 +42,14 @@ header#nav .right-nav {
     height: 100%;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    font-size: 18px;
+    gap: 20px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 header#nav a {
     text-decoration: none;
-    /* height: 100%; */
-    padding: 20px;
+    padding: 12px;
     color: black;
 }
 
