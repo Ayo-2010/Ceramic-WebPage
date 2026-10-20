@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piece — Ceramic studio</title>
+    <meta name="description" content="A handmade ceramic piece from Ceramic studio.">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Piece — Ceramic studio">
+    <meta property="og:description" content="A handmade ceramic piece from Ceramic studio.">
+    <meta property="og:image" content="./images/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div data-include="includes/header.html"></div>
+
+    <main class="product-page">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./shop.html">Shop</a>
+            <span aria-hidden="true">/</span>
+            <span id="breadcrumbName">Piece</span>
+        </nav>
+        <div id="productView"></div>
+        <section class="product-more" id="productMore" hidden>
+            <div class="product-more-head">
+                <h2>More from the studio</h2>
+                <a href="./shop.html">View all</a>
+            </div>
+            <div class="related-grid" id="relatedGrid"></div>
+        </section>
+    </main>
+
+    <div data-include="includes/footer.html"></div>
+
+    <script src="./js/include.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/product.js"></script>
+    <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
+</body>
+</html>

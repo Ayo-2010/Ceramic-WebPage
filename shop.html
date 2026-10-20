@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop — Ceramic studio</title>
-    <meta name="description" content="Shop handmade ceramics from Ceramic studio.">
+    <meta name="description" content="Shop handmade ceramics and small-group workshops from Ceramic studio.">
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
     <meta property="og:title" content="Ceramic studio — Shop">
-    <meta property="og:description" content="Shop handmade ceramics from Ceramic studio.">
+    <meta property="og:description" content="Shop handmade ceramics and small-group workshops from Ceramic studio.">
     <meta property="og:image" content="./images/og-image.svg">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="canonical" href="http://example.com/shop.html">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="Shop-style.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <div data-include="includes/header.html"></div>
@@ -30,69 +31,13 @@
             <a href="./shop-new.html">New</a>
             <a href="./shop-products.html">Products</a>
         </div>
-        <div class="right-shop">
-            <div class="sec">
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/Workshop_4.webp" alt=""></a>
-                    <p class="productName">Workshop for Companies</p>
-                    <p class="productPrice">220 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/Workshop_2.webp" alt="" ></a>
-                    <p class="productName">Workshop for Adults</p>
-                    <p class="productPrice">210 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/1600_tz47gb_img_b83dba16ecbacffd8937e1b6f26059fc.webp" alt=""></a>
-                    <p class="productName">Workshop for Children</p>
-                    <p class="productPrice">200 USD</p>
-                </div>
-            </div>
-            <div class="sec">
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/Workshop_header_blog_A.webp" alt=""></a>
-                    <p class="productName">Online Workshop</p>
-                    <p class="productPrice">180 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/blog_2_product_2-m66gvsvr.webp" alt=""></a>
-                    <p class="productName">Set of Containers</p>
-                    <p class="productPrice">210 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_1-m66gvr2i.webp" alt=""></a>
-                    <p class="productName">Star Set</p>
-                    <p class="productPrice">200 USD</p>
-                </div>
-            </div>
-            <div class="sec">
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_5-m66gvs2f.webp" alt=""></a>
-                    <p class="productName">Nordic Container</p>
-                    <p class="productPrice">220 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_4C-m66gvrvu.webp" alt=""></a>
-                    <p class="productName">Silver Set</p>
-                    <p class="productPrice">50 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_6-m66gvt5t.webp" alt=""></a>
-                    <p class="productName">Moon Plate</p>
-                    <p class="productPrice">40 USD</p>
-                </div>
-            </div>
-            <div class="sec">
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_3-m66gvsia.webp" alt=""></a>
-                    <p class="productName">Sara Mug</p>
-                    <p class="productPrice">22 USD</p>
-                </div>
-            </div>
-        </div>
+        <div class="right-shop" id="shopGrid" data-collection="all"></div>
     </div>
     <div data-include="includes/footer.html"></div>
     <script src="./js/include.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/shop.js"></script>
     <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
 </html>

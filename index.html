@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceramic studio</title>
-    <meta name="description" content="Handmade ceramics — shop, workshops and blog.">
+    <meta name="description" content="Handmade ceramics, small-group workshops and studio notes from Ceramic studio in Warsaw.">
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon.svg">
     <meta property="og:title" content="Ceramic studio">
-    <meta property="og:description" content="Handmade ceramics — shop, workshops and blog.">
+    <meta property="og:description" content="Handmade ceramics, small-group workshops and studio notes from Ceramic studio in Warsaw.">
     <meta property="og:image" content="./images/og-image.svg">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -19,120 +19,105 @@
     <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
     <div data-include="includes/header.html"></div>
-    <div class="section main">
-            <h1>Ceramic studio</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci massa, dapibus quis molestie sit amet, pharetra vitae dolor. Praesent auctor, dui id maximus sagittis, lectus enim pharetra quam, ut laoreet tortor metus ut ipsum.</p>
-        <button type="button" class="button">Show More</button>
-    </div>
 
-    
+    <div class="section main">
+        <h1>Ceramic studio</h1>
+        <p>Useful, quiet objects for the everyday table. Thrown and glazed by hand in our Warsaw studio, in small batches that never repeat exactly.</p>
+        <a class="button" href="./shop.html">Shop the collection</a>
+    </div>
 
     <div class="section">
         <h2 class="section2-header">Bestsellers</h2>
-        <div class="container-hor">
-            <div class="shopContain">
-                <a href="#"><img src="./images/product_3.webp" alt=""></a>
-                <p class="productName">Sara Mug</p>
-                <p class="productPrice">20 USD</p>
-            </div>
-            <div class="shopContain">
-                <a href="#"><img src="./images/product_6.webp" alt=""></a>
-                <p class="productName">Sara Mug</h4>
-                <p class="productPrice">20 USD</p>
-            </div>
-            <div class="shopContain">
-                <a href="#"><img src="./images/product_4C.webp" alt=""></a>
-                <p class="productName">Sara Mug</p>
-                <p class="productPrice">20 USD</p>
-            </div>
-            <div class="shopContain">
-                <a href="#"><img src="./images/Screenshot_3-11-2025_181340_templates.webwave.me.jpeg" alt=""></a>
-                <p class="productName">Sara Mug</p>
-                <p class="productPrice">20 USD</p>
-            </div>
-        </div>
-
+        <div class="container-hor" id="bestsellerGrid"></div>
     </div>
+
     <div class="section main-2">
         <div class="left">
             <h2>New collection</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur. Etiam aliquam posuere hendrerit. Curabitur egestas sed nisl rhoncus finibus.</p>
-            <button type="button" class="button">More</button>
-
+            <p>Warm clay, pale glazes and forms that feel good in the hand. The new collection is a set of everyday pieces made to be used, stacked and passed around the table.</p>
+            <a class="button" href="./shop-new.html">See what is new</a>
         </div>
         <div class="right">
             <div class="left-2">
-                <img src="./images/ceramics_2.webp" alt="">
-                <img src="./images/ceramics_2.webp" alt="">
+                <img src="./images/ceramics_2.webp" alt="Hand-thrown ceramic vessels on a studio shelf" loading="lazy">
+                <img src="./images/ceramics_2.webp" alt="A close view of glazed stoneware" loading="lazy">
             </div>
             <div class="right-2">
-                <img src="./images/ceramics_2.webp" alt="">
+                <img src="./images/ceramics_2.webp" alt="Ceramic pieces drying in the studio" loading="lazy">
             </div>
         </div>
-        
     </div>
+
     <div class="section main-3">
         <div class="left">
-            <img src="./images/Workshop_4.webp" alt="">
+            <img src="./images/Workshop_4.webp" alt="A group making ceramics around a studio table" loading="lazy">
         </div>
         <div class="right">
             <h2>Workshops</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur. Etiam aliquam posuere hendrerit. Curabitur egestas sed nisl rhoncus finibus.</p>
-            <button type="button" class="button" >More</button>
+            <p>Spend an evening at the wheel or learn hand-building from your kitchen table. Small groups, patient teaching and clay under your nails. No experience needed, and every piece is fired in our kiln.</p>
+            <a class="button" href="./workshop.html">Book a workshop</a>
         </div>
     </div>
+
     <div class="section main-4">
         <h2>Our employees</h2>
         <div class="sub-contain">
             <div class="sub-third">
-                <img src="./images/employee1.webp" alt="">
+                <img src="./images/employee1.webp" alt="Abdullah Abdulwahab" loading="lazy">
                 <h4>Abdullah Abdulwahab</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum.</p>
+                <p>Founder and potter. Throws the tableware, mixes glazes and keeps the kiln schedule honest.</p>
             </div>
             <div class="sub-third">
-                <img src="./images/employee2.webp" alt="">
+                <img src="./images/employee2.webp" alt="Abdulquadri Umar" loading="lazy">
                 <h4>Abdulquadri Umar</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum.</p>
+                <p>Studio assistant. Trims pots, packs orders and makes the coffee that keeps the studio moving.</p>
             </div>
             <div class="sub-third">
-                <img src="./images/employee3.webp" alt="">
+                <img src="./images/employee3.webp" alt="Muziab Abdulwahab" loading="lazy">
                 <h4>Muziab Abdulwahab</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum.</p>
+                <p>Workshops and community. Welcomes every first-timer and keeps the studio calm on busy days.</p>
             </div>
         </div>
     </div>
-    <!-- Collage section: large image left, three images on the right -->
+
     <div class="section collage">
-            <div class="gallery-left">
-                <img src="./images/product_2A.webp" alt="large ceramic">
+        <div class="gallery-left">
+            <img src="./images/product_2A.webp" alt="Large ceramic vessel" loading="lazy">
+        </div>
+        <div class="gallery-right">
+            <div class="gallery-top">
+                <img src="./images/product_6.webp" alt="Moon plate" loading="lazy">
             </div>
-            <div class="gallery-right">
-                <div class="gallery-top">
-                    <img src="./images/product_6.webp" alt="bowl">
+            <div class="gallery-bottom">
+                <div class="bottom-item">
+                    <img src="./images/product_4A.webp" alt="Ceramic jars" loading="lazy">
                 </div>
-                <div class="gallery-bottom">
-                    <div class="bottom-item">
-                        <img src="./images/product_4A.webp" alt="jars">
-                    </div>
-                    <div class="bottom-item">
-                        <img src="./images/product_5.webp" alt="vase">
-                    </div>
+                <div class="bottom-item">
+                    <img src="./images/product_5.webp" alt="Nordic container" loading="lazy">
                 </div>
             </div>
+        </div>
     </div>
+
     <div class="story">
         <div class="section OurStory">
-        <div class="left">
-            <h2>Our Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum sapien ac sapien vestibulum posuere. Praesent congue dui nec lectus tincidunt elementum. Donec viverra a neque vel egestas. Ut quis urna orci. Nullam sollicitudin est et quam rhoncus, nec imperdiet sem efficitur. Etiam aliquam posuere hendrerit. Curabitur egestas sed nisl rhoncus finibus.</p>
+            <div class="left">
+                <h2>Our Story</h2>
+                <p>Ceramic studio began with a secondhand wheel, a borrowed kiln and a stack of local clay. Today we make small runs of tableware in Warsaw, teaching workshops in the same room where the pots are thrown. We keep things slow: fewer pieces, better materials and glazes that let the clay speak.</p>
+            </div>
         </div>
     </div>
-    </div>
+
     <div data-include="includes/footer.html"></div>
+
     <script src="./js/include.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/shop.js"></script>
     <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
 </html>

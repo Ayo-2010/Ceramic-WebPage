@@ -3,28 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>New — Ceramic studio</title>
+    <meta name="description" content="The newest handmade pieces and workshop dates from Ceramic studio.">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
+    <meta property="og:title" content="Ceramic studio — New">
+    <meta property="og:description" content="The newest handmade pieces and workshop dates from Ceramic studio.">
+    <meta property="og:image" content="./images/og-image.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="http://example.com/shop-new.html">
     <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="Shop-style.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/brands.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <header id="nav">
-        <div class="left-nav">
-            <a href="./index.html"><img src="./images/logo.webp" alt=""></a>
-        </div>
-        <div class="right-nav">
-            <a href="./shop.html" class="active">SHOP</a>
-            <a href="./workshop.html">WORKSHOP</a>
-            <a href="./blog.html">BLOG</a>
-            <a href="./contact.html">CONTACT</a>
-            <a href="#"><i class="fa fa-cart-shopping ff"></i></a>
-        </div>
-    </header>
+    <div data-include="includes/header.html"></div>
     <div class="shop-main">
-        <h1>Shop</h1>
+        <h1>New</h1>
     </div>
     <div class="section shop-section">
         <div class="left-shop">
@@ -32,76 +28,13 @@
             <a href="./shop-new.html" class="active">New</a>
             <a href="./shop-products.html">Products</a>
         </div>
-        <div class="right-shop">
-            <div class="sec">
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/Workshop_4.webp" alt=""></a>
-                    <p class="productName">Workshop for Companies</p>
-                    <p class="productPrice">220 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_1-m66gvr2i.webp" alt=""></a>
-                    <p class="productName">Star Set</p>
-                    <p class="productPrice">200 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_4C-m66gvrvu.webp" alt=""></a>
-                    <p class="productName">Silver Set</h4>
-                    <p class="productPrice">50 USD</p>
-                </div>
-            
-            </div>
-            <div class="sec">
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_5-m66gvs2f.webp" alt=""></a>
-                    <p class="productName">Nordic Container</p>
-                    <p class="productPrice">220 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/blog_2_product_2-m66gvsvr.webp" alt=""></a>
-                    <p class="productName">Set of Containers</h4>
-                    <p class="productPrice">210 USD</p>
-                </div>
-                <div class="shopContain1">
-                    <a href="#"><img src="./images/product_3-m66gvsia.webp" alt=""></a>
-                    <p class="productName">Sara Mug</p>
-                    <p class="productPrice">22 USD</p>
-                </div>
-
-            
-            </div>
-            
-
-        </div>
+        <div class="right-shop" id="shopGrid" data-collection="new"></div>
     </div>
-    <div class="footer">
-        <div class="sub-foot">
-            <p>02-233 Warszawa</p>
-            <p>Al. Jerozolimskie 12</p>
-        </div>
-        <div class="sub-foot">
-            <a href="#">email@contact.com</a>
-            <a href="#">07045033528</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Store Regulations</a>
-            <a href="#">Privacy policy</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#">Delivery</a>
-            <a href="#">Returns & Exchanges</a>
-        </div>
-        <div class="sub-foot">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-x-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-
-    </div>
-    <footer class="site-footer">
-      <div class="container">
-        <p>© <span id="year"></span> Abdullah Abdulwahab — <a href="#">GitHub</a> • <a href="#">LinkedIn</a></p>
-      </div>
-    
-    
+    <div data-include="includes/footer.html"></div>
+    <script src="./js/include.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/shop.js"></script>
+    <script src="./fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
+</html>
